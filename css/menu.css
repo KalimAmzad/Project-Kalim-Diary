@@ -1,0 +1,75 @@
+body { color: #777; font-size: 16px; font-family: sans-serif; margin: 0; padding: 0; }
+a { color: #00a2ff; text-decoration: none; }
+
+header { height: 250px; background: #eee url(banner.jpg) no-repeat center; background-size: cover; margin-bottom: 50px; position: relative; }
+header a.logo { position: absolute; display: block; width: 350px; height: 100px; background: url(logo_1.png) no-repeat 0 0; background-size: contain; z-index: 1; top: 15px; left: 20px; }
+header a.logo span { display: none; }
+
+
+nav { background-color: rgba(0,0,0,.6); position: relative; padding: 45px 0px 0px 180px; }
+
+/* Add menu rules here */
+nav ul{
+	list-style: none;
+	margin:0;
+	padding: 0;
+	text-decoration: none;
+}
+
+nav ul::after{
+	content: '';
+	display: block;
+	clear: both;
+	text-decoration: none;
+}
+nav ul li:hover{
+	background-color: rgba(0,102,102,.8);
+	text-decoration: none;
+}
+nav ul li:hover > ul{
+	display: block;
+	text-decoration: none;
+}
+nav ul li a{
+	display: inline-block;
+	color: #fff;
+	padding: 10px 20px;
+	text-decoration: none;
+	width: 125px;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	background-color: #339999;
+	text-decoration: none;
+}
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	background-color: rgba(0,102,102,.8);
+}
+nav ul ul li{
+	position: relative;
+}
+nav ul ul ul{
+	left: 100%;
+	top: 0;
+}
+/* top level*/
+nav > ul{
+	padding-left: 35px;
+}
+nav > ul > li{
+	float: left;
+}
+nav > ul> li > a{
+	padding: 10px 20px 15px 20px;
+	width: auto;
+	text-decoration: none;
+}
+@media screen and (max-width: 750px) {
+	
+	header a.logo { width: 120px; height: 44px; }
+
+}
